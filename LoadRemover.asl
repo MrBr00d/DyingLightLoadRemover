@@ -1,9 +1,13 @@
 state("DyingLightGame")
 {
-	uint isLoading: "engine_x64_rwdi.dll" 0x0A2BE80, 0x50, 0xA8, 0x48, 0x3D0, 0x28;
+	uint isLoading: "gamedll_x64_rwdi.dll" 0x1D47750, 0x240, 0x80, 0x310, 0x728, 0xAC;
 }
 
 isLoading
 {
-	return current.isLoading;
+	if (return current.isLoading == 0) {
+		return true;
+	} else {
+		return false;
+	}
 }
