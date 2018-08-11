@@ -5,9 +5,5 @@ state("DyingLightGame")
 
 isLoading
 {
-	if (return current.isLoading == 0) {
-		return true;
-	} else {
-		return false;
-	}
+	return current.isLoading == 1;
 }
