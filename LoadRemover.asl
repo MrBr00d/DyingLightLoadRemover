@@ -3,6 +3,7 @@ state("DyingLightGame")
 {
 	int Loading1: "engine_x64_rwdi.dll", 0xA2C234;
 	int Loading2: "rd3d11_x64_rwdi.dll", 0x7AFDC;
+	int Loading3: "rd3d11_x64_rwdi.dll", 0x7AFE0;
 	int intro: "gamedll_x64_rwdi.dll", 0x1D512E0;
 	
 }
@@ -18,7 +19,7 @@ update
 	}
 	
 	
-	if (current.Loading2 == 0 || current.Loading1 != 0)
+	if (current.Loading1 != 0 || (current.Loading2 == 0 && current.Loading3 == 0))
 	{
 		vars.isLoading = true;
 	}
