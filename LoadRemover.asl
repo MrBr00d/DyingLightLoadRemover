@@ -2,7 +2,8 @@ state("DyingLightGame")
 
 {
 	int Loading1: "rd3d11_x64_rwdi.dll", 0x7D108;
-	int intro: "gamedll_x64_rwdi.dll", 0x1D512E0;
+	int intro: "gamedll_x64_rwdi.dll", 0x1D552E0
+//	int intro: "gamedll_x64_rwdi.dll", 0x1D512E0;
 	
 }
 
