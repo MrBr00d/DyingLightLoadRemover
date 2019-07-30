@@ -2,8 +2,8 @@ state("DyingLightGame")
 
 {
 	int Loading1: "rd3d11_x64_rwdi.dll", 0x7D108;
-	int intro: "gamedll_x64_rwdi.dll", 0x1D552E0
-//	int intro: "gamedll_x64_rwdi.dll", 0x1D512E0;
+	int intro: "engine_x64_rwdi.dll", 0x0A2EB70, 0x798;
+//	int intro: "engine_x64_rwdi.dll", 0x0A2BC00, 0x7F0; use this when the one above here breaks.
 	
 }
 
@@ -12,7 +12,7 @@ update
 	vars.dostart = false;
 	vars.isLoading = false;
 	
-	if (old.intro != current.intro && current.intro != 1)
+	if (old.intro == 291 && current.intro == 259)
 	{
 		vars.dostart = true;
 	}
