@@ -8,7 +8,7 @@ update
 {
 	vars.isLoading = false;	
 	
-	if (current.Loading1 != 0)
+	if (current.Loading1 > 200 && current.Loading1 < 300)
 	{
 		vars.isLoading = true;
 	}
