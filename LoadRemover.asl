@@ -12,6 +12,7 @@ update
 	{
 		vars.isLoading = true;
 	}
+print("" + vars.isLoading);
 }
 
 isLoading
